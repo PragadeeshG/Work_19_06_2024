@@ -1,0 +1,16 @@
+create table if not exists volcker_compliance_to_trading(
+volcker_compliance_code Integer not null,
+data_custodian_id Integer null,
+trade_id Integer null,
+pre_trade_applicable varchar(255) null,
+business_indicator Integer null,
+user_code char null,
+country_code char null,
+unit_name varchar(255) null,
+linked_group_mapping_id varchar(255) null,
+creation_cr varchar(255) null,
+modified_cr varchar(255) null,
+creation_date varchar(255) null,
+modfied_date varchar(255) null,
+entity_state varchar(255) null,
+constraint volcker_compliance_to_trading_pk primary key(volcker_compliance_code));

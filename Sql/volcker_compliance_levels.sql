@@ -1,0 +1,18 @@
+create table if not exists volcker_compliance_levels(
+volcker_compliance_code Integer not null,
+volcker_compliance_tree_id Integer null,
+volcker_compliance_tree_effective_date varchar(255) null,
+volcker_compliance_tree_code Integer null,
+volcker_compliance_tree_description varchar(255) null,
+data_charge_treatment1 varchar(255) null,
+data_charge_treatment1_desc varchar(255) null,
+data_charge_treatment2 varchar(255) null,
+data_charge_treatment2_desc varchar(255) null,
+data_charge_treatment3 varchar(255) null,
+data_charge_treatment3_desc varchar(255) null,
+data_charge_treatment4 varchar(255) null,
+data_charge_treatment4_desc varchar(255) null,
+creation_date varchar(255) null,
+modfied_date varchar(255) null,
+entity_state varchar(255) null,
+constraint volcker_compliance_levels_pk primary key(volcker_compliance_code));
